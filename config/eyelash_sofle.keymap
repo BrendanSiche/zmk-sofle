@@ -38,6 +38,29 @@
     };
 
     behaviors {
+        e_acute: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_E_ACUTE &ALT_E_ACUTE_CAP>; };
+
+        e_grave: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_E_GRAVE &ALT_E_GRAVE_CAP>; };
+
+        e_circ: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_E_CIRC &ALT_E_CIRC_CAP>; };
+
+        a_grave: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_A_GRAVE &ALT_A_GRAVE_CAP>; };
+
+        c_ced: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_C_CED &ALT_C_CED_CAP>; };
+
+        i_circ: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_I_CIRC &ALT_I_CIRC_CAP>; };
+
+        o_circ: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_O_CIRC &ALT_O_CIRC_CAP>; };
+
+        u_grave: { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
+            mods = <MOD_LSFT MOD_RSFT>; bindings = <&ALT_U_GRAVE &ALT_U_GRAVE_CAP>; };
     };
 
     combos {
@@ -64,6 +87,87 @@
 
             label = "SHIFT_MCLK";
         };
+        /* === é / è / ê / ë === */
+        ALT_E_ACUTE: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N3>, <&macro_release &kp LEFT_ALT>; };
+        ALT_E_ACUTE_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N0 KP_N1>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_E_GRAVE: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N2>, <&macro_release &kp LEFT_ALT>; };
+        ALT_E_GRAVE_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N0 KP_N0>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_E_CIRC: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N4>, <&macro_release &kp LEFT_ALT>; };
+        ALT_E_CIRC_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N0 KP_N2>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_E_DIA: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N5>, <&macro_release &kp LEFT_ALT>; };
+        ALT_E_DIA_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N0 KP_N3>, <&macro_release &kp LEFT_ALT>; };
+
+        /* === à / â / ä === */
+        ALT_A_GRAVE: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N2 KP_N4>, <&macro_release &kp LEFT_ALT>; };
+        ALT_A_GRAVE_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N1 KP_N9 KP_N2>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_A_CIRC: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N2 KP_N6>, <&macro_release &kp LEFT_ALT>; };
+        ALT_A_CIRC_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N1 KP_N9 KP_N4>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_A_DIA: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N2 KP_N8>, <&macro_release &kp LEFT_ALT>; };
+        ALT_A_DIA_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N1 KP_N9 KP_N6>, <&macro_release &kp LEFT_ALT>; };
+
+        /* === ù / û / ü === */
+        ALT_U_GRAVE: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N4 KP_N9>, <&macro_release &kp LEFT_ALT>; };
+        ALT_U_GRAVE_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N1 KP_N7>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_U_CIRC: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N5 KP_N1>, <&macro_release &kp LEFT_ALT>; };
+        ALT_U_CIRC_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N1 KP_N9>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_U_DIA: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N5 KP_N2>, <&macro_release &kp LEFT_ALT>; };
+        ALT_U_DIA_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N2 KP_N0>, <&macro_release &kp LEFT_ALT>; };
+
+        /* === î / ï === */
+        ALT_I_CIRC: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N8>, <&macro_release &kp LEFT_ALT>; };
+        ALT_I_CIRC_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N0 KP_N6>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_I_DIA: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N9>, <&macro_release &kp LEFT_ALT>; };
+        ALT_I_DIA_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N0 KP_N7>, <&macro_release &kp LEFT_ALT>; };
+
+        /* === ô / ö === */
+        ALT_O_CIRC: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N4 KP_N4>, <&macro_release &kp LEFT_ALT>; };
+        ALT_O_CIRC_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N1 KP_N2>, <&macro_release &kp LEFT_ALT>; };
+
+        ALT_O_DIA: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N4 KP_N6>, <&macro_release &kp LEFT_ALT>; };
+        ALT_O_DIA_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N1 KP_N4>, <&macro_release &kp LEFT_ALT>; };
+
+        /* === ç === */
+        ALT_C_CED: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N2 KP_N3 KP_N1>, <&macro_release &kp LEFT_ALT>; };
+        ALT_C_CED_CAP: { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT>, <&kp KP_N0 KP_N1 KP_N9 KP_N9>, <&macro_release &kp LEFT_ALT>; };
+
     };
 
     keymap {
@@ -97,11 +201,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6          &kp F7  &kp F8      &kp F9     &kp F10      &trans
+&trans     &trans        &trans          &e_circ       &e_acute      &e_grave        &mmv MOVE_DOWN   &bt BT_CLR      &bt BT_CLR_ALL      &kp F11    &kp F12      &kp UNDER    &kp PLUS
+&trans     &a_grave      &trans          &trans        &trans        &trans          &mmv MOVE_LEFT   &out OUT_USB    &out OUT_BLE        &trans     &trans       &kp LBRC     &kp RBRC
+&trans     &trans        &trans          &c_ced        &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset          &soft_off  &bootloader  &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans              &trans     &trans
             >;
 
             display-name = "layer2";
