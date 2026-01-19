@@ -128,8 +128,8 @@ layers:
   - {t: '-', s: _}
   - +
   - {t: '=', s: +}
-  - '&LEFT_BRACKET'
-  - '&RIGHT_BRACKET'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   layer2:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
