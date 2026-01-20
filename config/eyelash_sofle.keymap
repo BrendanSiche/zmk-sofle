@@ -42,68 +42,58 @@ behaviors {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_E_ACUTE &ALT_E_ACUTE_CAP>;
+        bindings = <&ALT_E_ACUTE, &ALT_E_ACUTE_CAP>;
     };
 
     e_grave: e_grave {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_E_GRAVE &ALT_E_GRAVE_CAP>;
+        bindings = <&ALT_E_GRAVE, &ALT_E_GRAVE_CAP>;
     };
 
     e_circ: e_circ {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_E_CIRC &ALT_E_CIRC_CAP>;
+        bindings = <&ALT_E_CIRC, &ALT_E_CIRC_CAP>;
     };
 
     a_grave: a_grave {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_A_GRAVE &ALT_A_GRAVE_CAP>;
+        bindings = <&ALT_A_GRAVE, &ALT_A_GRAVE_CAP>;
     };
 
     c_ced: c_ced {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_C_CED &ALT_C_CED_CAP>;
+        bindings = <&ALT_C_CED, &ALT_C_CED_CAP>;
     };
 
     i_circ: i_circ {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_I_CIRC &ALT_I_CIRC_CAP>;
+        bindings = <&ALT_I_CIRC, &ALT_I_CIRC_CAP>;
     };
 
     o_circ: o_circ {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_O_CIRC &ALT_O_CIRC_CAP>;
+        bindings = <&ALT_O_CIRC, &ALT_O_CIRC_CAP>;
     };
 
     u_grave: u_grave {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
         mods = <MOD_SHIFT>;
-        bindings = <&ALT_U_GRAVE &ALT_U_GRAVE_CAP>;
+        bindings = <&ALT_U_GRAVE, &ALT_U_GRAVE_CAP>;
     };
 };
-
-
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
-        };
-    };
 
 macros {
     SHIFT_MCLK: SHIFT_MCLK {
