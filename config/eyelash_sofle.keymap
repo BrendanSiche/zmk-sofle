@@ -37,8 +37,6 @@
         tap-ms = <100>;
     };
 
-/ {
-
 behaviors {
         /* é / É */
         e_acute: e_acute {
