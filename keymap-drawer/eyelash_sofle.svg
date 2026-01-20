@@ -1088,25 +1088,25 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">&amp;ALT_E_CI…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 60%">E</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">CIRCUMFLEX</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan>
 </text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">&amp;ALT_E_CI…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">E CIRCUMF…</tspan></text>
 </g>
 <g transform="translate(252, 91)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">&amp;ALT_E_AC…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan>
+<tspan x="0" dy="-0.0em">E</tspan><tspan x="0" dy="1.2em">ACUTE,</tspan>
 </text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">&amp;ALT_E_AC…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">E ACUTE</tspan></text>
 </g>
 <g transform="translate(308, 91)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">&amp;ALT_E_GR…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan>
+<tspan x="0" dy="-0.0em">E</tspan><tspan x="0" dy="1.2em">GRAVE,</tspan>
 </text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">&amp;ALT_E_GR…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">E GRAVE</tspan></text>
 </g>
 <g transform="translate(462, 147)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1155,9 +1155,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">&amp;ALT_A_GR…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan>
+<tspan x="0" dy="-0.0em">A</tspan><tspan x="0" dy="1.2em">GRAVE,</tspan>
 </text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">&amp;ALT_A_GR…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">A GRAVE</tspan></text>
 </g>
 <g transform="translate(140, 147)" class="key trans keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1238,9 +1238,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">&amp;ALT_C_CED</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan>
+<tspan x="0" dy="-0.0em" style="font-size: 86%">CEDILLA</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">,</tspan>
 </text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 60%">&amp;ALT_C_CE…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">CEDILLA</tspan></text>
 </g>
 <g transform="translate(252, 203)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
