@@ -37,63 +37,75 @@
         tap-ms = <100>;
     };
 
+/ {
+
 behaviors {
-    e_acute: e_acute {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_E_ACUTE, &ALT_E_ACUTE_CAP>;
-    };
+        /* é / É */
+        e_acute: e_acute {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp E_ACUTE, &kp E_ACUTE>;
+        };
 
-    e_grave: e_grave {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_E_GRAVE, &ALT_E_GRAVE_CAP>;
-    };
+        /* è / È */
+        e_grave: e_grave {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp E_GRAVE, &kp E_GRAVE>;
+        };
 
-    e_circ: e_circ {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_E_CIRC, &ALT_E_CIRC_CAP>;
-    };
+        /* ê / Ê */
+        e_circ: e_circ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp E_CIRCUMFLEX, &kp E_CIRCUMFLEX>;
+        };
 
-    a_grave: a_grave {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_A_GRAVE, &ALT_A_GRAVE_CAP>;
-    };
+        /* à / À */
+        a_grave: a_grave {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp A_GRAVE, &kp A_GRAVE>;
+        };
 
-    c_ced: c_ced {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_C_CED, &ALT_C_CED_CAP>;
-    };
+        /* ç / Ç */
+        c_ced: c_ced {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp C_CEDILLA, &kp C_CEDILLA>;
+        };
 
-    i_circ: i_circ {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_I_CIRC, &ALT_I_CIRC_CAP>;
-    };
+        /* î / Î */
+        i_circ: i_circ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp I_CIRCUMFLEX, &kp I_CIRCUMFLEX>;
+        };
 
-    o_circ: o_circ {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_O_CIRC, &ALT_O_CIRC_CAP>;
-    };
+        /* ô / Ô */
+        o_circ: o_circ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp O_CIRCUMFLEX, &kp O_CIRCUMFLEX>;
+        };
 
-    u_grave: u_grave {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
-        bindings = <&ALT_U_GRAVE, &ALT_U_GRAVE_CAP>;
+        /* ù / Ù */
+        u_grave: u_grave {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp U_GRAVE, &kp U_GRAVE>;
+        };
     };
 };
+
 
 macros {
     SHIFT_MCLK: SHIFT_MCLK {
